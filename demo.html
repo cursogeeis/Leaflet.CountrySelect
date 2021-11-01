@@ -19,7 +19,7 @@
 	
 	<script>
 		function init(){			
-			var baseLayer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{attribution: 'Tiles &copy; CartoDB'});
+			var baseLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png',{attribution: 'Tiles &copy; CartoDB'});
 			var map = L.map("map",{layers: [baseLayer], center: [-23.88, -62.75], zoom: 4});
 			var select = L.countrySelect({exclude:"French Southern and Antarctic Lands"});
 
